@@ -725,6 +725,7 @@ a.medal:hover {
     font-size: 13px;
     line-height: 20px;
     min-height: 100px;
+    padding-bottom: 5px;
 }
 
 .question-body img {
