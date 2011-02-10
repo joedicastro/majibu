@@ -1036,7 +1036,7 @@ var i18nEs = {
 	'italic':'cursiva',
 	'link':'enlace',
 	'quote':'citar',
-	'preformatted text':'texto preformateado',
+	'preformatted text':'código',
 	'image':'imagen',
 	'numbered list':'lista numerada',
 	'bulleted list':'lista no numerada',

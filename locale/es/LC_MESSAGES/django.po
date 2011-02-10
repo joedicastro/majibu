@@ -527,9 +527,8 @@ msgid "new/"
 msgstr "nuevo/"
 
 #: forum/urls.py:203
-#, fuzzy
 msgid "tools/"
-msgstr "Herramientas"
+msgstr "herramientas/"
 
 #: forum/actions/meta.py:39
 #, python-format
@@ -782,11 +781,11 @@ msgstr "%(user)s %(were_was)s recibió la medalla %(badge_name)s"
 
 #: forum/actions/user.py:127
 msgid "were"
-msgstr ""
+msgstr " "
 
 #: forum/actions/user.py:127
 msgid "was"
-msgstr ""
+msgstr " "
 
 #: forum/actions/user.py:132
 msgid "suspended"
@@ -914,9 +913,8 @@ msgid "Allow comments"
 msgstr "Permitir comentarios"
 
 #: forum/forms/admin.py:100
-#, fuzzy
 msgid "send validation email"
-msgstr "send-validation/"
+msgstr "send-validation"
 
 #: forum/forms/admin.py:105
 #, fuzzy
@@ -1260,7 +1258,7 @@ msgid "Disallow answers to be accepted"
 msgstr "Desactivar la aceptación de respuestas"
 
 #: forum/settings/accept.py:9
-msgid "Disable accepting answers feature. If you reenable it in the future, currently accepted answers will still be marked as accepted."
+msgid "Disable accepting answers feature. If you re-enable it in the future, currently accepted answers will still be marked as accepted."
 msgstr "Deshabilitar la posibilidad de aceptar respuestas. Si la habilitas en el futuro, las respuestas actualmente aceptadas seguirán marcadas como aceptadas."
 
 #: forum/settings/accept.py:13
@@ -1276,16 +1274,16 @@ msgid "Maximum accepted answers per user/question"
 msgstr "Número máximo de respuestas aceptadas por usuario/pregunta"
 
 #: forum/settings/accept.py:18
-msgid "If more than one accepted answer is allowed, how many can be accepted per single user per question."
+msgid "If more than one accpeted answer is allowed, how many can be accepted per single user per question."
 msgstr "Si se permite más de una respuesta aceptada, cuántas respuestas se pueden aceptar por usuario y por pregunta."
 
 #: forum/settings/accept.py:21
-msgid "Users can accept own answer"
+msgid "Users an accept own answer"
 msgstr "Los usuarios pueden aceptar su propia respuesta"
 
 #: forum/settings/accept.py:22
-msgid "Are normal users allowed to accept their own answers?"
-msgstr "Se permite a los usuarios normales aceptar sus propias respuestas?"
+msgid "Are normal users allowed to accept their own answers.."
+msgstr "¿Se permite a los usuarios normales aceptar sus propias respuestas?"
 
 #: forum/settings/basic.py:9
 #: forum/skins/default/templates/osqaadmin/djstyle_base.html:67
@@ -1759,6 +1757,10 @@ msgstr "Karma inicial"
 #: forum/settings/repgain.py:8
 msgid "The initial reputation an user gets when he first signs in."
 msgstr "La reputación inicial que gana un usuario cuando se registra."
+
+#: forum/settings/repgain.py:11
+msgid "Max rep by up votes / day"
+msgstr "Karma máximo por votos positivos en un día"
 
 #: forum/settings/repgain.py:12
 msgid "Maximum reputation a user can gain in one day for being upvoted."
@@ -2730,24 +2732,6 @@ msgstr "Cerrar"
 #: forum/skins/default/templates/base_content.html:36
 msgid "Ok"
 msgstr "Ok"
-
-#: forum/skins/default/templates/base_content.html:38
-#: forum/templatetags/node_tags.py:151
-msgid "word"
-msgstr "palabra"
-
-#: forum/skins/default/templates/base_content.html:39
-msgid "words"
-msgstr "palabras"
-
-#: forum/skins/default/templates/base_content.html:40
-#: forum/templatetags/node_tags.py:150
-msgid "character"
-msgstr "caracter"
-
-#: forum/skins/default/templates/base_content.html:41
-msgid "characters"
-msgstr "caracteres"
 
 #: forum/skins/default/templates/close.html:6
 #: forum/skins/default/templates/close.html:16
@@ -3820,6 +3804,13 @@ msgstr "Editar comentario"
 msgid "Delete comment"
 msgstr "Borrar comentario"
 
+#: forum/skins/default/templates/node/comments.html:24
+#: forum/skins/default/templates/node/comments.html:25
+#: forum/skins/default/templates/node/comments.html:72
+#: forum/skins/default/templates/node/comments.html:73
+msgid "Convert comment to answer"
+msgstr "Convertir comentario en respuesta"
+
 #: forum/skins/default/templates/node/comments.html:34
 #, python-format
 msgid "showing %(showing)s of %(total)s"
@@ -4175,9 +4166,8 @@ msgid "Administration menu"
 msgstr "Menú de administración"
 
 #: forum/skins/default/templates/osqaadmin/createuser.html:7
-#, fuzzy
 msgid "Create User"
-msgstr "Respuesta Genial"
+msgstr "Crear Usuario"
 
 #: forum/skins/default/templates/osqaadmin/createuser.html:10
 #, fuzzy
@@ -4527,9 +4517,8 @@ msgid "uses"
 msgstr "usuarios"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:261
-#, fuzzy
 msgid "Node manager"
-msgstr "gestionar"
+msgstr "Gestionar nodos"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:264
 msgid "Nodes bulk management"
@@ -4541,11 +4530,11 @@ msgstr ""
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:289
 msgid "Body"
-msgstr ""
+msgstr "Cuerpo"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:294
 msgid "Title and Body"
-msgstr ""
+msgstr "Titulo y Cuerpo"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:324
 #, fuzzy
@@ -4554,11 +4543,11 @@ msgstr "plata"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:324
 msgid "Click to show/hide"
-msgstr ""
+msgstr "Selecciona para mostrar/ocultar"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:326
 msgid "By type"
-msgstr ""
+msgstr "Por tipo"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:329
 msgid "click to clear the type filter"
@@ -4580,16 +4569,15 @@ msgstr ""
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:337
 msgid "By state"
-msgstr ""
+msgstr "Por estado"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:340
 msgid "click to clear the state filter"
 msgstr ""
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:340
-#, fuzzy
 msgid "any"
-msgstr "día"
+msgstr "cualquiera"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:349
 msgid "Match any selected"
@@ -4601,7 +4589,7 @@ msgstr ""
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:354
 msgid "By author(s)"
-msgstr ""
+msgstr "Por autor(es)"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:356
 msgid "No users selected, use the box below to add users to the filter."
@@ -4612,9 +4600,8 @@ msgid "Click on the cross next to a user name to remove it from the filter."
 msgstr ""
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:370
-#, fuzzy
 msgid "By tag(s)"
-msgstr "etiquetas"
+msgstr "Por etiqueta(s)"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:372
 msgid "No tags selected, use the box below to add tags to the filter."
@@ -4626,11 +4613,11 @@ msgstr ""
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:386
 msgid "Pre defined"
-msgstr ""
+msgstr "Predefinidos"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:388
 msgid "There are no saved filters. Click below to add."
-msgstr ""
+msgstr "No hay filtros fuardados. Pulsar debajo para añadir."
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:396
 #, fuzzy
@@ -4639,7 +4626,7 @@ msgstr "nombre de usuario"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:397
 msgid "Click to save the current filter"
-msgstr ""
+msgstr "Pulsa para salvar el filtro actual"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:400
 msgid "Show"
@@ -4679,26 +4666,24 @@ msgid "Run the selected action"
 msgstr ""
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:442
-#, fuzzy
 msgid "Type"
-msgstr "Tipo MIME"
+msgstr "Tipo"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:443
 msgid "Summary"
-msgstr ""
+msgstr "Resumen"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:445
-#, fuzzy
 msgid "State"
-msgstr "Guardar"
+msgstr "Estado"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:447
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:450
 msgid "Added at"
-msgstr ""
+msgstr "Añadido"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:453
 #, fuzzy
@@ -4706,25 +4691,22 @@ msgid "Score"
 msgstr "más"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:456
-#, fuzzy
 msgid "Last activity by"
-msgstr "Actividad reciente"
+msgstr "Actividad reciente por"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:459
-#, fuzzy
 msgid "Last activity at"
 msgstr "Actividad reciente"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:461
 #: forum_modules/exporter/exporter.py:326
 #: forum_modules/exporter/importer.py:357
-#, fuzzy
 msgid "Tags"
-msgstr "etiquetas"
+msgstr "Etiquetas"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:490
 msgid "by"
-msgstr ""
+msgstr "por"
 
 #: forum/skins/default/templates/osqaadmin/set.html:18
 msgid "Preview"
@@ -5427,6 +5409,22 @@ msgstr "cancelar wiki comunitario"
 msgid "convert to comment"
 msgstr "convertir en comentario"
 
+#: forum/templatetags/node_tags.py:141
+msgid "convert to question"
+msgstr "convertir en pregunta"
+
+#: forum/templatetags/node_tags.py:154
+msgid "character"
+msgid_plural "characters"
+msgstr[0] "caracter"
+msgstr[1] "caracteres"
+
+#: forum/templatetags/node_tags.py:155
+msgid "word"
+msgid_plural "words"
+msgstr[0] "palabra"
+msgstr[1] "palabras"
+
 #: forum/templatetags/node_tags.py:204
 msgid "posted"
 msgstr "enviada"
@@ -5478,9 +5476,8 @@ msgid "createuser"
 msgstr "creada"
 
 #: forum/views/admin.py:384
-#, fuzzy
 msgid "Create new user"
-msgstr "Respuesta Genial"
+msgstr "Crear un usuario nuevo"
 
 #: forum/views/admin.py:399
 #, python-format
@@ -5541,7 +5538,7 @@ msgstr "markdown-del-nodo/"
 
 #: forum/views/admin.py:425
 msgid "Bulk management"
-msgstr ""
+msgstr "Administración por lotes"
 
 #: forum/views/admin.py:431
 #, fuzzy
@@ -5550,7 +5547,7 @@ msgstr "plata"
 
 #: forum/views/admin.py:444
 msgid "No action performed"
-msgstr ""
+msgstr "No se ha realizado ninguna acción"
 
 #: forum/views/admin.py:451
 msgid "All selected nodes marked as deleted"
@@ -6857,30 +6854,26 @@ msgid "Importing"
 msgstr "Formato"
 
 #: forum_modules/exporter/settings.py:7
-#, fuzzy
 msgid "Exporter settings"
-msgstr "Otros ajustes"
+msgstr "Opciones de exportación"
 
 #: forum_modules/exporter/settings.py:7
-#, fuzzy
 msgid "Data export settings"
-msgstr "Otros ajustes"
+msgstr "Opciones de exportación de datos"
 
 #: forum_modules/exporter/settings.py:10
-#, fuzzy
 msgid "Backups storage"
-msgstr "Volver a la página inicial"
+msgstr "Almacenamiento de copias de seguridad"
 
 #: forum_modules/exporter/settings.py:11
 msgid "A folder to keep your backups organized."
-msgstr ""
+msgstr "Un directorio donde mantener organizadas tus copias de seguridad"
 
 #: forum_modules/exporter/urls.py:8
 #: forum_modules/exporter/urls.py:10
 #: forum_modules/exporter/urls.py:12
-#, fuzzy
 msgid "exporter/"
-msgstr "denunciar"
+msgstr "exportador/"
 
 #: forum_modules/exporter/urls.py:8
 #, fuzzy
@@ -6896,15 +6889,13 @@ msgid "download/"
 msgstr ""
 
 #: forum_modules/exporter/urls.py:12
-#, fuzzy
 msgid "import/"
-msgstr "denunciar"
+msgstr "importar/"
 
 #: forum_modules/exporter/views.py:20
 #: forum_modules/exporter/views.py:68
-#, fuzzy
 msgid "exporter"
-msgstr "denunciar"
+msgstr "exportador"
 
 #: forum_modules/exporter/views.py:20
 msgid "XML data export"
