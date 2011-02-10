@@ -897,6 +897,7 @@ msgid "Template"
 msgstr "Plantilla"
 
 #: forum/forms/admin.py:88
+#: forum/settings/sidebar.py:7
 msgid "Sidebar Content"
 msgstr "Contenido de la Barra Lateral"
 
@@ -914,12 +915,11 @@ msgstr "Permitir comentarios"
 
 #: forum/forms/admin.py:100
 msgid "send validation email"
-msgstr "send-validation"
+msgstr "enviar email de validación"
 
 #: forum/forms/admin.py:105
-#, fuzzy
 msgid "email address"
-msgstr "Tu dirección de email"
+msgstr "Dirección de email"
 
 #: forum/forms/auth.py:21
 msgid "Your account email"
@@ -1245,6 +1245,18 @@ msgstr "Configuración de medallas"
 msgid "Configure badges on your OSQA site."
 msgstr "Configura las medallas de tu web."
 
+#: forum/settings/about.py:4
+msgid "About page"
+msgstr "Pagina Acerca de"
+
+#: forum/settings/about.py:24
+msgid "About page text"
+msgstr "Texto de la pagina Acerca de"
+
+#: forum/settings/about.py:26
+msgid "The about page."
+msgstr "la pagina Acerca de"
+
 #: forum/settings/accept.py:5
 msgid "Accepting answers"
 msgstr "Aceptar respuestas"
@@ -1321,6 +1333,10 @@ msgstr "El título de tu aplicación que saldrá en la barra de títulos del nav
 #: forum/settings/basic.py:26
 msgid "Application short name"
 msgstr "Nombre corto de la aplicación"
+
+#: forum/settings/basic.py:27
+msgid "The short name for your application that will show up in many places."
+msgstr "El nombre corto de la aplicación que se mostrará en muchas partes."
 
 #: forum/settings/basic.py:30
 msgid "Application keywords"
@@ -1830,6 +1846,18 @@ msgstr "Karma perdido por nota denunciada y borrada"
 msgid "Reputation a user loses by having the last revision of one of his posts flagged the enough number of times to delete the post."
 msgstr "Reputación que pierde un usuario por recibir el número necesario de denuncias para borrar la última revisión de una de sus notas."
 
+#: forum_modules/robotstxt/templates/settings.py:6
+msgid "Robots txt"
+msgstr "Robots txt"
+
+#: forum_modules/robotstxt/templates/settings.py:19
+msgid "Robots.txt file"
+msgstr "Fichero Robots.txt"
+
+#: forum_modules/robotstxt/templates/settings.py:20
+msgid "The robots.txt file search engine spiders will see."
+msgstr "El fichero Robots.txt que los robots de los buscadores verán."
+
 #: forum/settings/sidebar.py:10
 msgid "Show the Welcome box"
 msgstr "Mostrar la caja de bienvenida"
@@ -1846,21 +1874,69 @@ msgstr "Presentación de la aplicación"
 msgid "The introductory page that is visible in the sidebar for anonymous users."
 msgstr "La página de presentación que es visible en la barra lateral para los usuarios anónimos."
 
+#: forum/settings/sidebar.py:21
+msgid "Show Upper Block"
+msgstr "Mostrar el bloque superior"
+
+#: forum/settings/sidebar.py:22
+msgid "Check if your pages should display the upper sidebar block."
+msgstr "¿Quieres mostrar el bloque superior?"
+
+#: forum/settings/sidebar.py:26
+msgid "Don't Wrap Upper Block"
+msgstr "No envolver el bloque superior"
+
+#: forum/settings/sidebar.py:27
+msgid "Don't wrap upper block with the standard style."
+msgstr "No envolver el bloque superior con el estilo estandar."
+
+#: forum/settings/sidebar.py:41
+msgid "Upper Block Content"
+msgstr "Contenido del bloque superior"
+
+#: forum/settings/sidebar.py:42
+msgid " The upper sidebar block. "
+msgstr "El bloque superior"
+
 #: forum/settings/sidebar.py:46
 msgid "Upper block rendering mode"
-msgstr ""
+msgstr "Modo de renderizado del bloque superior"
 
 #: forum/settings/sidebar.py:47
 msgid "How to render your upper block code."
-msgstr ""
+msgstr "Como renderizar el codigo de tu bloque superior"
+
+#: forum/settings/sidebar.py:53
+msgid "Show Lower Block"
+msgstr "Mostrar el bloque inferior"
+
+#: forum/settings/sidebar.py:54
+msgid "Check if your pages should display the lower sidebar block."
+msgstr "¿Quieres mostrar el bloque inferior?"
+
+#: forum/settings/sidebar.py:58
+msgid "Don't Wrap Lower Block"
+msgstr "No envolver el bloque inferior"
+
+#: forum/settings/sidebar.py:59
+msgid "Don't wrap lower block with the standard style."
+msgstr "No envolver el bloque inferior con el estilo estandar."
+
+#: forum/settings/sidebar.py:70
+msgid "Lower Block Content"
+msgstr "Contenido del bloque inferior"
+
+#: forum/settings/sidebar.py:71
+msgid " The lower sidebar block. "
+msgstr "El bloque inferior"
 
 #: forum/settings/sidebar.py:75
 msgid "Lower block rendering mode"
-msgstr ""
+msgstr "Modo de renderizado del bloque inferior"
 
 #: forum/settings/sidebar.py:76
 msgid "How to render your lower block code."
-msgstr ""
+msgstr "Como renderizar el codigo de tu bloque inferior"
 
 #: forum/settings/static.py:17
 msgid "Use custom CSS"
@@ -2255,7 +2331,7 @@ msgstr "Configura cómo se muestran ciertas partes del sitio."
 
 #: forum/settings/view.py:8
 msgid "Recent tags block size"
-msgstr "Recent tags block size"
+msgstr "Tamaño del bloque de etiquetas recientes"
 
 #: forum/settings/view.py:9
 msgid "The number of tags to display in the recent tags block in the front page."
@@ -2263,7 +2339,7 @@ msgstr "El número de etiquetas que se muestran en el bloque de etiquetas recien
 
 #: forum/settings/view.py:12
 msgid "Recent awards block size"
-msgstr "Recent awards block size"
+msgstr "Tamaño del bloque de medallas recientes"
 
 #: forum/settings/view.py:13
 msgid "The number of awards to display in the recent awards block in the front page."
@@ -2271,7 +2347,7 @@ msgstr "El número de medallas que se muestran en el bloque de medallas reciente
 
 #: forum/settings/view.py:16
 msgid "Limit related tags block"
-msgstr "Limit related tags block"
+msgstr "Limite del bloque de etiquetas relacionadas"
 
 #: forum/settings/view.py:17
 msgid "Limit related tags block size in questions list pages. Set to 0 to display all all tags."
@@ -2286,50 +2362,58 @@ msgid "Configure the voting rules on your site."
 msgstr "Configure las reglas de votación en su sitio."
 
 #: forum/settings/voting.py:7
+msgid "Add reputation to max votes per day"
+msgstr "Sumar el karma del usuario al máximo de votos por día"
+
+#: forum/settings/voting.py:8
+msgid "The user reputation is added to the static MAX_VOTES_PER_DAY option. Users with higher reputation can vote more."
+msgstr "El karma del usuario es añadido a la opción MAX_VOTES_PER_DAY. Los usuarios com mayor reputación pueden votar más."
+
+#: forum/settings/voting.py:11
 msgid "Maximum votes per day"
 msgstr "Máximo de votos por día"
 
-#: forum/settings/voting.py:8
+#: forum/settings/voting.py:12
 msgid "The maximum number of votes an user can cast per day."
 msgstr "El número máximo de votos que un usuario puede emitir por día."
 
-#: forum/settings/voting.py:11
+#: forum/settings/voting.py:15
 msgid "Start warning about votes left"
 msgstr "Comenzar advertencias sobre votos restantes"
 
-#: forum/settings/voting.py:12
+#: forum/settings/voting.py:16
 msgid "From how many votes left should an user start to be warned about it."
 msgstr "A partir de cuántos votos restantes se le debería avisar a un usuario."
 
-#: forum/settings/voting.py:15
+#: forum/settings/voting.py:19
 msgid "Maximum flags per day"
 msgstr "Máximo de denuncias por día"
 
-#: forum/settings/voting.py:16
+#: forum/settings/voting.py:20
 msgid "The maximum number of times an user can flag a post per day."
 msgstr "El número máximo de veces que un usuario puede denunciar un mensaje en un día."
 
-#: forum/settings/voting.py:19
+#: forum/settings/voting.py:23
 msgid "Flag count to hide post"
 msgstr "Número de denuncias para ocultar mensaje"
 
-#: forum/settings/voting.py:20
+#: forum/settings/voting.py:24
 msgid "How many times a post needs to be flagged to be hidden from the main page."
 msgstr "Cuántas denuncias tiene que recibir un mensaje para que se oculte de la página principal."
 
-#: forum/settings/voting.py:23
+#: forum/settings/voting.py:27
 msgid "Flag count to delete post"
 msgstr "Número de denuncias para borrar mensaje"
 
-#: forum/settings/voting.py:24
+#: forum/settings/voting.py:28
 msgid "How many times a post needs to be flagged to be deleted."
 msgstr "Cuántas denuncias tiene que recibir un mensaje para que se borre."
 
-#: forum/settings/voting.py:27
+#: forum/settings/voting.py:31
 msgid "Days to cancel a vote"
 msgstr "Días para cancelar un voto"
 
-#: forum/settings/voting.py:28
+#: forum/settings/voting.py:32
 msgid "How many days an user can cancel a vote after he originaly casted it."
 msgstr "Cuántos días tiene un usuario para cacelar su voto tras haberlo emitido."
 
@@ -4170,9 +4254,8 @@ msgid "Create User"
 msgstr "Crear Usuario"
 
 #: forum/skins/default/templates/osqaadmin/createuser.html:10
-#, fuzzy
 msgid "Quick creation of a new user"
-msgstr "Preguntas que respondo"
+msgstr "Creación rápida de un nuevo usuario"
 
 #: forum/skins/default/templates/osqaadmin/createuser.html:17
 #: forum/skins/default/templates/osqaadmin/edit_page.html:25
