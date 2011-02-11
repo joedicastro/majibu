@@ -1,5 +1,4 @@
 /* Pretty printing styles. Used with prettify.js. */
-
 .str { color: #080; }
 .kwd { color: #008; }
 .com { color: #800; }
@@ -12,7 +11,6 @@
 .atv { color: #080; }
 .dec { color: #606; }
 pre.prettyprint { padding: 3px; border: 0px solid #888; }
-
 @media print {
   .str { color: #060; }
   .kwd { color: #006; font-weight: bold; }
@@ -25,3 +23,4 @@ pre.prettyprint { padding: 3px; border: 0px solid #888; }
   .atn { color: #404; }
   .atv { color: #060; }
 }
+
