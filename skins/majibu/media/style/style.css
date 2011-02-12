@@ -65,7 +65,7 @@ blockquote {background-color: #F5F5F5; margin-bottom: 10px; margin-right: 15px; 
 .short-summary .votes, .short-summary .views { color: #666666;}
 .short-summary .favorites { width: 24px; float: left; text-align: center;}
 #question-table { margin-bottom: 10px;}
-.questions-count { color: #A40000; font-family: sans-serif; font-size: 24px; font-weight: 600; margin-top: 3px; margin-right: 5px; padding: 0 0 5px 0; line-height: 100%;}
+.questions-count { color: #A40000; font-family: sans-serif; font-size: 24px; font-weight: bold; margin-top: 3px; margin-right: 5px; padding: 0 0 5px 0; line-height: 100%;}
 .boxA { background: none repeat scroll 0 0 #356FCB; -moz-border-radius:5px; -webkit-border-radius:5px; margin-bottom: 12px; padding: 5px;}
 .boxA h3 { color: #FFFFFF; font-size: 13px; font-weight: 800; margin: 0 0 4px; padding: 0; text-align: center;}
 .boxA .body { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #999999; font-size: 13px; padding: 8px;}

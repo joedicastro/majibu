@@ -133,7 +133,7 @@ msgstr "suspender este usuario"
 
 #: forum/registry.py:96
 msgid "give/take karma"
-msgstr "dar/quitar karma"
+msgstr "dar/quitar Karma"
 
 #: forum/registry.py:103
 msgid "remove moderator status"
@@ -370,7 +370,7 @@ msgstr "favoritos/"
 
 #: forum/urls.py:139
 msgid "reputation/"
-msgstr "karma/"
+msgstr "Karma/"
 
 #: forum/urls.py:141
 msgid "votes/"
@@ -738,7 +738,7 @@ msgstr "le ha dado un bono"
 #: forum/actions/user.py:49
 #, python-format
 msgid "Congratulations, you have been awarded an extra %s reputation points."
-msgstr "Felicidades, has recibido %s puntos extra de karma."
+msgstr "Felicidades, has recibido %s puntos extra de Karma."
 
 #: forum/actions/user.py:50
 msgid "Thank you"
@@ -747,7 +747,7 @@ msgstr "Gracias"
 #: forum/actions/user.py:53
 #, python-format
 msgid "You have been penalized in %s reputation points."
-msgstr "Has sido penalizado con %s puntos de karma menos."
+msgstr "Has sido penalizado con %s puntos de Karma menos."
 
 #: forum/actions/user.py:57
 #: forum/templatetags/extra_tags.py:93
@@ -758,12 +758,12 @@ msgstr "desconocido"
 #: forum/actions/user.py:62
 #, python-format
 msgid "%(user)s awarded an extra %(value)s reputation points to %(users)s: %(message)s"
-msgstr "%(user)s concedió %(value)s puntos de karma extra a %(users)s: %(message)s"
+msgstr "%(user)s concedió %(value)s puntos de Karma extra a %(users)s: %(message)s"
 
 #: forum/actions/user.py:67
 #, python-format
 msgid "%(user)s penalised %(users)s in %(value)s reputation points: %(message)s"
-msgstr "%(user)s penalizó a %(users)s con %(value)s puntos de karma menos: %(message)s"
+msgstr "%(user)s penalizó a %(users)s con %(value)s puntos de Karma menos: %(message)s"
 
 #: forum/actions/user.py:75
 msgid "was awarded"
@@ -864,12 +864,12 @@ msgstr "Markdown"
 #: forum/forms/admin.py:50
 #: forum/settings/static.py:7
 msgid "HTML"
-msgstr ""
+msgstr "HTML"
 
 #: forum/forms/admin.py:51
 #: forum/settings/static.py:8
 msgid "Escaped"
-msgstr ""
+msgstr "Escapado"
 
 #: forum/forms/admin.py:76
 #: forum/skins/default/templates/osqaadmin/nodeman.html:284
@@ -1085,7 +1085,7 @@ msgstr "por favor utiliza los siguientes caracteres en las etiquetas: letras 'a-
 #: forum/forms/qanda.py:104
 #, python-format
 msgid "You don't have enough reputation to create new tags. The following tags do not exist yet: %s"
-msgstr "No tienes suficiente reputación para crear nuevas etiquetas. Las siguientes etiquetas aún no existen: %s"
+msgstr "No tienes suficiente Karma para crear nuevas etiquetas. Las siguientes etiquetas aún no existen: %s"
 
 #: forum/forms/qanda.py:114
 #: forum/skins/default/templates/question_summary_list_roll.html:26
@@ -1245,9 +1245,13 @@ msgstr "Configuración de medallas"
 msgid "Configure badges on your OSQA site."
 msgstr "Configura las medallas de tu web."
 
-#: forum/settings/about.py:4
+#: forum/settings/about.py:5
 msgid "About page"
 msgstr "Pagina Acerca de"
+
+#: forum/settings/about.py:5
+msgid "Define the text in the about page. You can use markdown and some basic html tags."
+msgstr "Define el texto de la pagina Acerca de. Puedes emplear markdown y algunas etiquetas básicas de HTML."
 
 #: forum/settings/about.py:24
 msgid "About page text"
@@ -1386,61 +1390,109 @@ msgstr "Configuración de correo"
 msgid "Email server and other email related settings."
 msgstr "Servidor de correo y otros ajustes relacionados con el email."
 
-#: forum/settings/email.py:8
+#: forum/settings/email.py:9
+msgid "Users are subscribed by default"
+msgstr "Los usuarios están subscritos por defecto"
+
+#: forum/settings/email.py:10
+msgid "Users are not subscribed by default"
+msgstr "Los usuarios no están subscritos por defecto"
+
+#: forum/settings/email.py:14
+msgid "Default email subscription"
+msgstr "Subscripción por defecto al envío de correos"
+
+#: forum/settings/email.py:17
+msgid "Choose what should be the default email subscription status while registering."
+msgstr "Elige cual deberia ser el estado por defecto de la subscricpción a los envios de notificaciones por email."
+
+#: forum/settings/email.py:21
 msgid "Email Server"
 msgstr "Servidor de correo"
 
-#: forum/settings/email.py:9
+#: forum/settings/email.py:22
 msgid "The SMTP server through which your application will be sending emails."
 msgstr "El servidor SMTP que la aplicación usará para enviar correo."
 
-#: forum/settings/email.py:13
+#: forum/settings/email.py:26
 msgid "Email Port"
 msgstr "Puerto de email"
 
-#: forum/settings/email.py:14
+#: forum/settings/email.py:27
 msgid "The port on which your SMTP server is listening to. Usually this is 25, but can be something else."
 msgstr "El puerto en el que escucha tu servidor SMTP. Normalmente es 25, pero puede ser diferente."
 
-#: forum/settings/email.py:18
+#: forum/settings/email.py:31
 msgid "Email User"
 msgstr "Usuario de correo"
 
-#: forum/settings/email.py:19
+#: forum/settings/email.py:32
 msgid "The username for your SMTP connection."
 msgstr "El usuario para tu conexión SMTP."
 
-#: forum/settings/email.py:23
+#: forum/settings/email.py:36
 msgid "Email Password"
 msgstr "Contraseña de email"
 
-#: forum/settings/email.py:24
+#: forum/settings/email.py:37
 msgid "The password for your SMTP connection."
-msgstr ""
+msgstr "La contraseña para tu servidor SMTP"
 
-#: forum/settings/email.py:29
+#: forum/settings/email.py:42
 msgid "Use TLS"
 msgstr "Usar TLS"
 
-#: forum/settings/email.py:30
-msgid "Does your SMTP server usFes TLS for authentication."
-msgstr ""
+#: forum/settings/email.py:43
+msgid "Whether to use TLS for authentication with your SMTP server."
+msgstr "¿Necesita tu servidor SMTP emplear autentificación TLS?"
 
-#: forum/settings/email.py:34
-msgid "Site 'from' email address"
+#: forum/settings/email.py:47
+msgid "Site 'from' Email Address"
 msgstr "Remitente para los emails de la web"
 
-#: forum/settings/email.py:35
+#: forum/settings/email.py:48
 msgid "The address that will show up on the 'from' field on emails sent by your website."
-msgstr ""
+msgstr "La dirección de email que aparecera en el campo 'De' en los correos enviados por tu sitio."
 
-#: forum/settings/email.py:39
-msgid "Email subject prefix"
-msgstr ""
+#: forum/settings/email.py:52
+msgid "Email Subject Prefix"
+msgstr "Prefijo de asunto para el email"
 
-#: forum/settings/email.py:40
-msgid "Every email sent through your website will have the subject prefixed by this string. It's usually a good idea to have such a prefix so your users can easilly set up a filter on their email clients."
-msgstr ""
+#: forum/settings/email.py:53
+msgid "Every email sent through your website will have the subject prefixed by this string. It's usually a good idea to have such a prefix so your users can easily set up a filter on their email clients."
+msgstr "Cada correo enviado a través de tu sitio tendrá esta frase como comienzo del campo asunto. Es normalmente una buena idea tener un prefijo con el que tus usuarios puedan facilmente configurar un filtro en sus clientes de correo."
+
+#: forum/settings/email.py:57
+msgid "Email Footer Text"
+msgstr "Texto del pie del email"
+
+#: forum/settings/email.py:58
+msgid "Email footer text, usually \"CAN SPAM\" compliance, or the physical address of the organization running the website. See <a href=\"http://en.wikipedia.org/wiki/CAN-SPAM_Act_of_2003\">this Wikipedia article</a> for more info."
+msgstr "Texto del pie de los correos, normalente la politica \"ANTI SPAM\", o la dirección fisica de la organización que gestion el sitio. Ver <a href=\"http://en.wikipedia.org/wiki/CAN-SPAM_Act_of_2003\">este artículo de la Wikipedia</a> para más información."
+
+#: forum/settings/email.py:62
+msgid "Email Border Color"
+msgstr "Color del borde del email"
+
+#: forum/settings/email.py:63
+msgid "The outter border color of the email base template"
+msgstr "El color del borde exterior de la plantilla base del email."
+
+#: forum/settings/email.py:67
+msgid "Email Paragraph Style"
+msgstr "Estilo de parrafo del email"
+
+#: forum/settings/email.py:68
+msgid "A valid css string to be used to style email paragraphs (the P tag)."
+msgstr "Una cadena CSS valida para ser empleada como estilo de parrafo en los correos (la etiqueta P)."
+
+#: forum/settings/email.py:72
+msgid "Email Link Style"
+msgstr "Estilo de los enlaces del email"
+
+#: forum/settings/email.py:73
+msgid "A valid css string to be used to style email links (the A tag)."
+msgstr "Una cadena CSS valida para ser empleada como estilo de enlace en los correos (la etiqueta A)."
 
 #: forum/settings/extkeys.py:4
 msgid "External Keys"
@@ -1448,7 +1500,7 @@ msgstr "Claves externas"
 
 #: forum/settings/extkeys.py:4
 msgid "Keys for various external providers that your application may optionally use."
-msgstr ""
+msgstr "Claves para varios proveedores externos que tu sitio puede opcionalmente emplear."
 
 #: forum/settings/extkeys.py:7
 msgid "Google sitemap code"
@@ -1456,7 +1508,7 @@ msgstr "Clave de Google Sitemap"
 
 #: forum/settings/extkeys.py:8
 msgid "This is the code you get when you register your site at <a href='https://www.google.com/webmasters/tools/'>Google webmaster central</a>."
-msgstr ""
+msgstr "Este es el código que tu obtienes cuando registras tu sitio en <a href='https://www.google.com/webmasters/tools/'>Google webmaster central</a>."
 
 #: forum/settings/extkeys.py:12
 msgid "Google analytics key"
@@ -1464,7 +1516,23 @@ msgstr "Clave de Google Analytics"
 
 #: forum/settings/extkeys.py:13
 msgid "Your Google analytics key. You can get one at the <a href='http://www.google.com/analytics/'>Google analytics official website</a>"
-msgstr "Una cadena de CSS válida que se usará para vestir los párrafos de los mensajes (la etiqueta P)."
+msgstr "Tu clave de Google Analytics. Puedes obtener una en <a href='http://www.google.com/analytics/'>Google analytics official website</a>."
+
+#: forum/settings/faq.py:6
+msgid "FAQ page"
+msgstr "Pagina FAQ"
+
+#: forum/settings/faq.py:6
+msgid "Define the text in the FAQ page. You can use markdown and some basic html tags."
+msgstr "Define el texto de la pagina FAQ. Puedes emplear markdown y algunas etiquetas básicas de HTML."
+
+#: forum/settings/faq.py:61
+msgid "FAQ page text"
+msgstr "El texto de la pagina FAQ"
+
+#: forum/settings/faq.py:62
+msgid " The faq page. "
+msgstr " La pagina FAQ"
 
 #: forum/settings/form.py:5
 msgid "Form settings"
@@ -1488,7 +1556,7 @@ msgstr "Limitar la creación de etiquetas"
 
 #: forum/settings/form.py:14
 msgid "Limit tag creation to super users, staff or users with a minimum reputation."
-msgstr "Limitar la creación de etiquetas a superusuarios, encargados del sitio o usuarios con un mínimo de reputación."
+msgstr "Limitar la creación de etiquetas a superusuarios, encargados del sitio o usuarios con un mínimo de Karma."
 
 #: forum/settings/form.py:20
 msgid "Minimum number of characters for a question's title"
@@ -1592,11 +1660,19 @@ msgstr "Cambiar esto:"
 
 #: forum/settings/minrep.py:4
 msgid "Minimum reputation config"
-msgstr "Configurar el karma mínimo"
+msgstr "Configurar el Karma mínimo"
 
 #: forum/settings/minrep.py:4
 msgid "Configure the minimum reputation required to perform certain actions on your site."
-msgstr "Configurar el karma mínimo necesario para realizar ciertas acciones en tu web."
+msgstr "Configurar el Karma mínimo necesario para realizar ciertas acciones en tu web."
+
+#: forum/settings/minrep.py:7
+msgid "Show captcha if user with less reputation than"
+msgstr "Mostrar captcha si el usuario tiene menos Karma de"
+
+#: forum/settings/minrep.py:7
+msgid "If the user has less reputation, captcha is used to when adding new content."
+msgstr "Si el usuario tiene menos Karma, se emplea un captcha para añadir contenido nuevo."
 
 #: forum/settings/minrep.py:7
 msgid "Minimum reputation to vote up"
@@ -1604,7 +1680,7 @@ msgstr "Karma mínimo para votar"
 
 #: forum/settings/minrep.py:8
 msgid "The minimum reputation an user must have to be allowed to vote up."
-msgstr "El mínimo de reputación que debe tener un usuario para que se le permita votar positivamente."
+msgstr "Karma mínimo que debe tener un usuario para que se le permita votar positivamente."
 
 #: forum/settings/minrep.py:11
 msgid "Minimum reputation to vote down"
@@ -1628,7 +1704,7 @@ msgstr "Karma mínimo para comentar"
 
 #: forum/settings/minrep.py:20
 msgid "The minimum reputation an user must have to be allowed to comment a post."
-msgstr "El mínimo de reputación que debe tener un usuario para que se le permita comentar."
+msgstr "Karma mínimo que debe tener un usuario para que se le permita comentar."
 
 #: forum/settings/minrep.py:23
 msgid "Minimum reputation to like a comment"
@@ -1644,7 +1720,7 @@ msgstr "Karma mínimo para subir ficheros"
 
 #: forum/settings/minrep.py:28
 msgid "The minimum reputation an user must have to be allowed to upload a file."
-msgstr "El mínimo de reputación que debe tener un usuario para que se le permita subir un archivo."
+msgstr "Karma mínimo que debe tener un usuario para que se le permita subir un archivo."
 
 #: forum/settings/minrep.py:31
 msgid "Minimum reputation to create tags"
@@ -1656,67 +1732,67 @@ msgstr "Karma mínimo que debe tener un usuario para poder crear nuevas etiqueta
 
 #: forum/settings/minrep.py:35
 msgid "Minimum reputation to close own question"
-msgstr "Reputación mínima para cerrar una pregunta propia"
+msgstr "Karma mínimo para cerrar una pregunta propia"
 
 #: forum/settings/minrep.py:36
 msgid "The minimum reputation an user must have to be allowed to close his own question."
-msgstr "Reputación mínima para cerrar una pregunta propia."
+msgstr "Karma mínimo para cerrar una pregunta propia."
 
 #: forum/settings/minrep.py:39
 msgid "Minimum reputation to reopen own question"
-msgstr "Reputación mínima para reabrir las propias preguntas"
+msgstr "Karma mínimo para reabrir las propias preguntas"
 
 #: forum/settings/minrep.py:40
 msgid "The minimum reputation an user must have to be allowed to reopen his own question."
-msgstr "Reputación mínima para reabrir una pregunta propia."
+msgstr "Karma mínimo para reabrir una pregunta propia."
 
 #: forum/settings/minrep.py:43
 msgid "Minimum reputation to retag others questions"
-msgstr "Reputación mínima para reetiquetar las preguntas de otros"
+msgstr "Karma mínimo para reetiquetar las preguntas de otros"
 
 #: forum/settings/minrep.py:44
 msgid "The minimum reputation an user must have to be allowed to retag others questions."
-msgstr "El mínimo de reputación que debe tener un usuario para que se le permita reetiquetar las preguntas de otros."
+msgstr "Karma mínimo que debe tener un usuario para que se le permita reetiquetar las preguntas de otros."
 
 #: forum/settings/minrep.py:47
 msgid "Minimum reputation to edit wiki posts"
-msgstr "Reputación mínima para editar notas convertidas en wiki"
+msgstr "Karma mínimo para editar notas convertidas en wiki"
 
 #: forum/settings/minrep.py:48
 msgid "The minimum reputation an user must have to be allowed to edit community wiki posts."
-msgstr "El mínimo de reputación que debe tener un usuario para que se le permita editar notas en modo wiki comunitario."
+msgstr "Karma mínimo que debe tener un usuario para que se le permita editar notas en modo wiki comunitario."
 
 #: forum/settings/minrep.py:51
 msgid "Minimum reputation to mark post as community wiki"
-msgstr "Reputación mínima para transformar un texto en wiki comunitario"
+msgstr "Karma mínimo para transformar un texto en wiki comunitario"
 
 #: forum/settings/minrep.py:52
 msgid "The minimum reputation an user must have to be allowed to mark a post as community wiki."
-msgstr "Reputación mínima que un usuario debe tener para poder transformar un texto en wiki comunitario."
+msgstr "Karma mínimo que un usuario debe tener para poder transformar un texto en wiki comunitario."
 
 #: forum/settings/minrep.py:55
 msgid "Minimum reputation to edit others posts"
-msgstr "Reputación mínima para editar las notas de los demás"
+msgstr "Karma mínimo para editar las notas de los demás"
 
 #: forum/settings/minrep.py:56
 msgid "The minimum reputation an user must have to be allowed to edit others posts."
-msgstr "El mínimo de reputación que debe tener un usuario para que se le permita editar las notas de los demás."
+msgstr "Karma mínimo que debe tener un usuario para que se le permita editar las notas de los demás."
 
 #: forum/settings/minrep.py:59
 msgid "Minimum reputation to close others posts"
-msgstr "Reputación mínima para cerrar las notas de los demás"
+msgstr "Karma mínimo para cerrar las notas de los demás"
 
 #: forum/settings/minrep.py:60
 msgid "The minimum reputation an user must have to be allowed to close others posts."
-msgstr "El mínimo de reputación que debe tener un usuario para que se le permita cerrar las notas de los demás."
+msgstr "Karma mínimo que debe tener un usuario para que se le permita cerrar las notas de los demás."
 
 #: forum/settings/minrep.py:63
 msgid "Minimum reputation to delete comments"
-msgstr "Reputación mínima para borrar comentarios"
+msgstr "Karma mínimo para borrar comentarios"
 
 #: forum/settings/minrep.py:64
 msgid "The minimum reputation an user must have to be allowed to delete comments."
-msgstr "El mínimo de reputación que debe tener un usuario para que se le permita borrar comentarios."
+msgstr "Karma mínimo que debe tener un usuario para que se le permita borrar comentarios."
 
 #: forum/settings/minrep.py:67
 msgid "Minimum reputation to convert answers to comment"
@@ -1726,13 +1802,29 @@ msgstr "Karma mínimo para convertir respuestas en comentarios"
 msgid "The minimum reputation an user must have to be allowed to convert an answer into a comment."
 msgstr "Karma mínimo que debe tener un usuario para poder convertir una respuesta en un comentario."
 
+#: forum/settings/minrep.py:75
+msgid "Minimum reputation to convert comments to answers"
+msgstr "Karma mínimo para convertir comentarios en respuestas"
+
+#: forum/settings/minrep.py:76
+msgid "The minimum reputation an user must have to be allowed to convert comments into an answer."
+msgstr "Karma mínimo que debe tener un usuario para converitr un comentario en una respuestas."
+
 #: forum/settings/minrep.py:71
 msgid "Minimum reputation to view offensive flags"
-msgstr "Reputación mínima para ver mensajes denunciados."
+msgstr "Karma mínimo para ver mensajes denunciados."
 
 #: forum/settings/minrep.py:72
 msgid "The minimum reputation an user must have to view offensive flags."
-msgstr "El mínimo de reputación que pudebeede tener un usuario para que se le permita ver mensajes denunciados."
+msgstr "Karma mínimo que debe tener un usuario para que se le permita ver mensajes denunciados."
+
+#: forum/settings/minrep.py:79
+msgid "Minimum reputation to convert answers to questions"
+msgstr "Karma mínimo para convertir respuestas en preguntas"
+
+#: forum/settings/minrep.py:80
+msgid "The minimum reputation an user must have to be allowed to convert an answer into a question."
+msgstr "Karma mínimo que debe tener un usuario para que se le permita convertir una respuesta en una pregunta."
 
 #: forum/settings/moderation.py:7
 msgid "Moderation settings"
@@ -1760,11 +1852,11 @@ msgstr "Puedes escribir más opciones para razones que dar para cerrar una pregu
 
 #: forum/settings/repgain.py:4
 msgid "Reputation gains and losses config"
-msgstr "Configuración de ganancias y pérdidas de reputación"
+msgstr "Configuración de ganancias y pérdidas de Karma"
 
 #: forum/settings/repgain.py:4
 msgid "Configure the reputation points a user may gain or lose upon certain actions."
-msgstr "Configura los puntos de reputación que un usuario puede ganar o perder con ciertas acciones."
+msgstr "Configura los puntos de Karma que un usuario puede ganar o perder con ciertas acciones."
 
 #: forum/settings/repgain.py:7
 msgid "Initial reputation"
@@ -1772,7 +1864,7 @@ msgstr "Karma inicial"
 
 #: forum/settings/repgain.py:8
 msgid "The initial reputation an user gets when he first signs in."
-msgstr "La reputación inicial que gana un usuario cuando se registra."
+msgstr "Karma inicial que gana un usuario cuando se registra."
 
 #: forum/settings/repgain.py:11
 msgid "Max rep by up votes / day"
@@ -1780,7 +1872,7 @@ msgstr "Karma máximo por votos positivos en un día"
 
 #: forum/settings/repgain.py:12
 msgid "Maximum reputation a user can gain in one day for being upvoted."
-msgstr "La reputación ḿaxima que puede ganar un usuario en un día por recibir votos positivos."
+msgstr "Karma ḿaximo que puede ganar un usuario en un día por recibir votos positivos."
 
 #: forum/settings/repgain.py:15
 msgid "Rep gain by upvoted"
@@ -1788,7 +1880,7 @@ msgstr "Karma ganado por votos positivos"
 
 #: forum/settings/repgain.py:16
 msgid "Reputation a user gains for having one of his posts up voted."
-msgstr "Reputación que gana un usuario por recibir un voto positivo a un mensaje."
+msgstr "Karma que gana un usuario por recibir un voto positivo a un mensaje."
 
 #: forum/settings/repgain.py:19
 msgid "Rep lost by downvoted"
@@ -1796,7 +1888,7 @@ msgstr "Karma perido por votos negativos"
 
 #: forum/settings/repgain.py:20
 msgid "Reputation a user loses for having one of his posts down voted."
-msgstr "Reputación que pierde un usuario por recibir un voto negativo a un mensaje."
+msgstr "Karma que pierde un usuario por recibir un voto negativo a un mensaje."
 
 #: forum/settings/repgain.py:23
 msgid "Rep lost by downvoting"
@@ -1804,15 +1896,15 @@ msgstr "Karma perdido por votar negativamente"
 
 #: forum/settings/repgain.py:24
 msgid "Reputation a user loses for down voting a post."
-msgstr "Reputación que pierde un usuario por votar negativamente a un mensaje."
+msgstr "Karma que pierde un usuario por votar negativamente a un mensaje."
 
 #: forum/settings/repgain.py:28
 msgid "Rep gain by accepted answer"
-msgstr "Reputación ganada por respuesta aceptada"
+msgstr "Karma ganado por respuesta aceptada"
 
 #: forum/settings/repgain.py:29
 msgid "Reputation a user gains for having one of his answers accepted."
-msgstr "Reputación que gana un usuario cuando se le acepta una de sus respuestas."
+msgstr "Karma que gana un usuario cuando se le acepta una de sus respuestas."
 
 #: forum/settings/repgain.py:32
 msgid "Rep gain by accepting answer"
@@ -1820,7 +1912,7 @@ msgstr "Karma ganado por aceptar respuesta"
 
 #: forum/settings/repgain.py:33
 msgid "Reputation a user gains for accepting an answer to one of his questions."
-msgstr "Reputación que gana un usuario por aceptar una respuesta a una de sus preguntas."
+msgstr "Karma que gana un usuario por aceptar una respuesta a una de sus preguntas."
 
 #: forum/settings/repgain.py:36
 msgid "Rep lost by post flagged"
@@ -1828,7 +1920,7 @@ msgstr "Karma perdido por nota denunciada."
 
 #: forum/settings/repgain.py:37
 msgid "Reputation a user loses by having one of his posts flagged."
-msgstr "Reputación que pierde un usuario por recibir una denuncia a uno de sus mensajes."
+msgstr "Karma que pierde un usuario por recibir una denuncia a uno de sus mensajes."
 
 #: forum/settings/repgain.py:40
 msgid "Rep lost by post flagged and hidden"
@@ -1836,7 +1928,7 @@ msgstr "Karma perdido por nota denunciada y oculta"
 
 #: forum/settings/repgain.py:41
 msgid "Reputation a user loses by having the last revision of one of his posts flagged the enough number of times to hide the post."
-msgstr "Reputación que pierde un usuario por recibir el número necesario de denuncias para ocultar la última revisión de una de sus notas."
+msgstr "Karma que pierde un usuario por recibir el número necesario de denuncias para ocultar la última revisión de una de sus notas."
 
 #: forum/settings/repgain.py:44
 msgid "Rep lost by post flagged and deleted"
@@ -1844,19 +1936,31 @@ msgstr "Karma perdido por nota denunciada y borrada"
 
 #: forum/settings/repgain.py:45
 msgid "Reputation a user loses by having the last revision of one of his posts flagged the enough number of times to delete the post."
-msgstr "Reputación que pierde un usuario por recibir el número necesario de denuncias para borrar la última revisión de una de sus notas."
+msgstr "Karma que pierde un usuario por recibir el número necesario de denuncias para borrar la última revisión de una de sus notas."
 
-#: forum_modules/robotstxt/templates/settings.py:6
+#: forum_modules/robotstxt/settings.py:6
 msgid "Robots txt"
 msgstr "Robots txt"
 
-#: forum_modules/robotstxt/templates/settings.py:19
+#: forum_modules/robotstxt/settings.py:6
+msgid "Set up the robots.txt file."
+msgstr "Configurar el fichero robots.txt"
+
+#: forum_modules/robotstxt/settings.py:19
 msgid "Robots.txt file"
 msgstr "Fichero Robots.txt"
 
-#: forum_modules/robotstxt/templates/settings.py:20
+#: forum_modules/robotstxt/settings.py:20
 msgid "The robots.txt file search engine spiders will see."
 msgstr "El fichero Robots.txt que los robots de los buscadores verán."
+
+#: forum/settings/sidebar.py:7
+msgid "Sidebar content"
+msgstr "Contenido de la Barra Lateral"
+
+#: forum/settings/sidebar.py:7
+msgid "Enter contents to display in the sidebar. You can use markdown and some basic html tags."
+msgstr "Introducir el contenido a mostrar en la barra lateral. Puedes usar markdown y algunas etiquetas básicas de HTML."
 
 #: forum/settings/sidebar.py:10
 msgid "Show the Welcome box"
@@ -1938,6 +2042,14 @@ msgstr "Modo de renderizado del bloque inferior"
 msgid "How to render your lower block code."
 msgstr "Como renderizar el codigo de tu bloque inferior"
 
+#: forum/settings/static.py:13
+msgid "Custom CSS"
+msgstr "CSS personalizado"
+
+#: forum/settings/static.py:13
+msgid "Define some custom css you can use to override the default css."
+msgstr "Define algunos elemenots CSS personalizados que puedes emplear para anular el CSS por defecto."
+
 #: forum/settings/static.py:17
 msgid "Use custom CSS"
 msgstr "Usar CSS personalizado"
@@ -1946,13 +2058,17 @@ msgstr "Usar CSS personalizado"
 msgid "Do you want to use custom CSS."
 msgstr "¿Quieres usar CSS personalizado?"
 
-#: forum/settings/static.py:22
-msgid "Custom CSS"
-msgstr "CSS personalizado"
-
 #: forum/settings/static.py:23
 msgid "Your custom CSS."
 msgstr "Tu CSS personalizado."
+
+#: forum/settings/static.py:27
+msgid "Header and Footer"
+msgstr "Cabecera y Píe de pagina"
+
+#: forum/settings/static.py:27
+msgid "Adds a custom header and/or footer to your page"
+msgstr "Añade una cabecera y un pie personalizados a tu pagina"
 
 #: forum/settings/static.py:31
 msgid "Use custom header"
@@ -1971,14 +2087,12 @@ msgid "Your custom header."
 msgstr "Tu cabecera personalizada."
 
 #: forum/settings/static.py:42
-#, fuzzy
 msgid "Custom Header rendering mode"
-msgstr "Cabecera Personalizada"
+msgstr "Modo de interpretado de la Cabecera personalizada"
 
 #: forum/settings/static.py:43
-#, fuzzy
 msgid "How to render your custom header code."
-msgstr "Tu cabecera personalizada."
+msgstr "Como interpretar el código de tu cabecera personalizada."
 
 #: forum/settings/static.py:48
 msgid "Show announcement bar"
@@ -1997,14 +2111,12 @@ msgid "The announcement bar content."
 msgstr "El contenido de la barra de anuncios."
 
 #: forum/settings/static.py:59
-#, fuzzy
 msgid "Announcement bar rendering mode"
-msgstr "Barra de anuncios"
+msgstr "Modo de interpretar la Barra de anuncios"
 
 #: forum/settings/static.py:60
-#, fuzzy
 msgid "How to render your announcement bar code."
-msgstr "El contenido de la barra de anuncios."
+msgstr "Como interpretar el código de la barra de anuncios."
 
 #: forum/settings/static.py:65
 msgid "Use custom footer"
@@ -2012,7 +2124,7 @@ msgstr "Usar pie personalizado"
 
 #: forum/settings/static.py:66
 msgid "Do you want to use a custom footer."
-msgstr "¿Quieres usar pie personalizad?"
+msgstr "¿Quieres usar pie personalizado?"
 
 #: forum/settings/static.py:70
 msgid "Custom Footer"
@@ -2023,14 +2135,12 @@ msgid "Your custom footer."
 msgstr "Tu pie de página personalizado."
 
 #: forum/settings/static.py:76
-#, fuzzy
 msgid "Custom footer rendering mode"
-msgstr "Modo de pie personalizado"
+msgstr "Modo de interpretar el pie personalizado"
 
 #: forum/settings/static.py:77
-#, fuzzy
 msgid "How to render your custom footer code."
-msgstr "Cómo aparecerá tu pie personalizado."
+msgstr "Cómo interpretar el código de tu pie personalizado."
 
 #: forum/settings/static.py:82
 msgid "Replace default footer"
@@ -2052,9 +2162,13 @@ msgstr "Modo de pie personalizado"
 msgid "How your custom footer will appear."
 msgstr "Cómo aparecerá tu pie personalizado."
 
+#: forum/settings/static.py:89
+msgid "Define some custom elements to include in the head section of every page."
+msgstr "Define algunos elementos personalizados para incluir en la cabecera de cada página."
+
 #: forum/settings/static.py:98
 msgid "Use custom Head elements"
-msgstr "Usar elmentos de cabecera personalizada."
+msgstr "Usar elementos de cabecera personalizada."
 
 #: forum/settings/static.py:99
 msgid "Do you want to use custom head elements."
@@ -2363,11 +2477,11 @@ msgstr "Configure las reglas de votación en su sitio."
 
 #: forum/settings/voting.py:7
 msgid "Add reputation to max votes per day"
-msgstr "Sumar el karma del usuario al máximo de votos por día"
+msgstr "Sumar el Karma del usuario al máximo de votos por día"
 
 #: forum/settings/voting.py:8
 msgid "The user reputation is added to the static MAX_VOTES_PER_DAY option. Users with higher reputation can vote more."
-msgstr "El karma del usuario es añadido a la opción MAX_VOTES_PER_DAY. Los usuarios com mayor reputación pueden votar más."
+msgstr "El Karma del usuario es añadido a la opción MAX_VOTES_PER_DAY. Los usuarios com mayor Karma pueden votar más."
 
 #: forum/settings/voting.py:11
 msgid "Maximum votes per day"
@@ -4334,6 +4448,11 @@ msgstr "volver a la configuración por defecto"
 msgid "Are you sure you want to run bootstrap mode?"
 msgstr "¿Estás seguro de que quieres pasar al modo 'bootstrap'?"
 
+#: forum/skins/default/templates/osqaadmin/dashboard.html:58
+#: forum/skins/default/templates/osqaadmin/index.html:60
+msgid "'Bootstrap mode' relaxes the minimum required reputation to perform actions like voting and commenting. This is useful to help new communities get started."
+msgstr "El 'modo Bootstrap' rebaja el karma mínimo requerido para realizar acciones como votar y comentar. Esto es útil para ayudar a afianzar comunidades que empiezan."
+
 #: forum/skins/default/templates/osqaadmin/dashboard.html:52
 #: forum/skins/default/templates/osqaadmin/index.html:54
 msgid "go bootstrap"
@@ -4469,7 +4588,7 @@ msgstr "Estadísticas de la web"
 
 #: forum/skins/default/templates/osqaadmin/index.html:65
 msgid "Recalculate scores and reputation"
-msgstr "Recalcular puntuaciones y reputación"
+msgstr "Recalcular puntuaciones y Karma"
 
 #: forum/skins/default/templates/osqaadmin/index.html:66
 msgid "This is a heavy operation, are you sure?"
@@ -4518,7 +4637,7 @@ msgstr "Verificar:"
 
 #: forum/skins/default/templates/osqaadmin/moderation.html:16
 msgid "highest ranking users"
-msgstr "usuarios con más karma"
+msgstr "usuarios con más Karma"
 
 #: forum/skins/default/templates/osqaadmin/moderation.html:17
 msgid "newer users"
@@ -4590,14 +4709,12 @@ msgid "out of"
 msgstr "de"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:73
-#, fuzzy
 msgid "rep"
 msgstr "reabrir"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:102
-#, fuzzy
 msgid "uses"
-msgstr "usuarios"
+msgstr "emplear"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:261
 msgid "Node manager"
@@ -4605,11 +4722,11 @@ msgstr "Gestionar nodos"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:264
 msgid "Nodes bulk management"
-msgstr ""
+msgstr "Gestion de nodos masiva"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:277
 msgid "reset text filter"
-msgstr ""
+msgstr "Reiniciar filtro de texto"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:289
 msgid "Body"
@@ -4620,9 +4737,8 @@ msgid "Title and Body"
 msgstr "Titulo y Cuerpo"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:324
-#, fuzzy
 msgid "Filter"
-msgstr "plata"
+msgstr "Filtro"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:324
 msgid "Click to show/hide"
@@ -4634,21 +4750,21 @@ msgstr "Por tipo"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:329
 msgid "click to clear the type filter"
-msgstr ""
+msgstr "pulsar para limpiar el filtro"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:329
 msgid "all"
-msgstr ""
+msgstr "todos"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:332
 #: forum/skins/default/templates/osqaadmin/nodeman.html:343
 msgid "click to remove from the filter"
-msgstr ""
+msgstr "pulsar para eliminar del filtro"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:332
 #: forum/skins/default/templates/osqaadmin/nodeman.html:343
 msgid "click to add to the filter"
-msgstr ""
+msgstr "pulsar para añadir al filtro"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:337
 msgid "By state"
@@ -4656,7 +4772,7 @@ msgstr "Por estado"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:340
 msgid "click to clear the state filter"
-msgstr ""
+msgstr "pulsar para limpiar el estado del filtro"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:340
 msgid "any"
@@ -4664,48 +4780,47 @@ msgstr "cualquiera"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:349
 msgid "Match any selected"
-msgstr ""
+msgstr "Coincidir con cualquiera seleccionado"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:350
 msgid "Match all selected"
-msgstr ""
+msgstr "Coincidir con todos los seleccionados"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:354
 msgid "By author(s)"
 msgstr "Por autor(es)"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:356
-msgid "No users selected, use the box below to add users to the filter."
-msgstr ""
+msgid "No users selected, use the box bellow to add users to the filter."
+msgstr "Ningún usuario seleccionado, emplea la casilla inferior para añadir usuarios al filtro."
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:366
 msgid "Click on the cross next to a user name to remove it from the filter."
-msgstr ""
+msgstr "Pulsa en la cruz al lado del nombre de un usuario para eliminarlo del filtro."
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:370
 msgid "By tag(s)"
 msgstr "Por etiqueta(s)"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:372
-msgid "No tags selected, use the box below to add tags to the filter."
-msgstr ""
+msgid "No tags selected, use the box bellow to add tags to the filter."
+msgstr "Ninguna etiqueta seleccionada, emplea la casilla inferior para añadir etiquetas al filtro."
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:382
 msgid "Click on the cross next to a tag name to remove it from the filter."
-msgstr ""
+msgstr "Pulsa en la cruz al lado de una etiqueta para eliminar del filtro."
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:386
 msgid "Pre defined"
 msgstr "Predefinidos"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:388
-msgid "There are no saved filters. Click below to add."
-msgstr "No hay filtros fuardados. Pulsar debajo para añadir."
+msgid "There are no saved filters. Click bellow to add."
+msgstr "No hay filtros guardados. Pulsar debajo para añadir."
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:396
-#, fuzzy
 msgid "Filter name..."
-msgstr "nombre de usuario"
+msgstr "Filtrar por nombre de usuario..."
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:397
 msgid "Click to save the current filter"
@@ -4713,40 +4828,35 @@ msgstr "Pulsa para salvar el filtro actual"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:400
 msgid "Show"
-msgstr ""
+msgstr "Mostrar"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:403
 msgid "Refresh"
-msgstr ""
+msgstr "Refrescar"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:410
-#, fuzzy
 msgid "Action"
 msgstr "Ubicación"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:413
-#, fuzzy
 msgid "Mark deleted"
-msgstr "borrar"
+msgstr "Borrar"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:414
-#, fuzzy
 msgid "Undelete"
-msgstr "recuperar"
+msgstr "Recuperar"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:415
-#, fuzzy
 msgid "Delete completely"
 msgstr "Borrar comentario"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:416
-#, fuzzy
 msgid "Close (questions only)"
 msgstr "Cerrar pregunta"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:419
 msgid "Run the selected action"
-msgstr ""
+msgstr "Ejecutar la siguiente acción"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:442
 msgid "Type"
@@ -4769,9 +4879,8 @@ msgid "Added at"
 msgstr "Añadido"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:453
-#, fuzzy
 msgid "Score"
-msgstr "más"
+msgstr "Puntuación"
 
 #: forum/skins/default/templates/osqaadmin/nodeman.html:456
 msgid "Last activity by"
@@ -4999,7 +5108,7 @@ msgstr "Actualizar"
 #: forum/skins/default/templates/users/signature.html:8
 #: forum/views/users.py:39
 msgid "reputation"
-msgstr "karma"
+msgstr "Karma"
 
 #: forum/skins/default/templates/users/info.html:28
 msgid "Suspended"
@@ -5413,7 +5522,7 @@ msgstr "votar negativamente"
 
 #: forum/templatetags/extra_tags.py:77
 msgid "reputation points"
-msgstr "puntos de karma"
+msgstr "puntos de Karma"
 
 #: forum/templatetags/extra_tags.py:107
 msgid "2 days ago"
@@ -5739,7 +5848,7 @@ msgstr "Lo sentimos, pero esta cuenta está suspendida"
 #: forum/views/commands.py:23
 #, python-format
 msgid "Sorry, but you don't have enough reputation points to %(action)s.<br />Please check the <a href='%(faq_url)s'>faq</a>"
-msgstr "Lo sentimos pero no tienes suficiente karma para %(action)s.<br />Por favor consulta las <a href='%(faq_url)s'>preguntas frecuentes</a>"
+msgstr "Lo sentimos pero no tienes suficiente Karma para %(action)s.<br />Por favor consulta las <a href='%(faq_url)s'>preguntas frecuentes</a>"
 
 #: forum/views/commands.py:31
 #, python-format
@@ -6088,7 +6197,7 @@ msgstr "Versión número %(rev_number)d"
 
 #: forum/views/users.py:39
 msgid "sorted by reputation"
-msgstr "ordenados por karma"
+msgstr "ordenados por Karma"
 
 #: forum/views/users.py:40
 msgid "recent"
@@ -6133,7 +6242,7 @@ msgstr "Sólo el dueño del sitio puede quitarle el estátus de superusuario a o
 
 #: forum/views/users.py:206
 msgid "Only superusers are allowed to award reputation points"
-msgstr "Sólo los superusuarios pueden otorgar puntos de reputación."
+msgstr "Sólo los superusuarios pueden otorgar puntos de Karma."
 
 #: forum/views/users.py:211
 msgid "Invalid number of points to award."
@@ -6166,11 +6275,11 @@ msgstr "actividad reciente del usuario"
 #: forum/views/users.py:341
 #: forum/skins/default/templates/users/tabs.html:12
 msgid "reputation history"
-msgstr "histórico del karma"
+msgstr "histórico del Karma"
 
 #: forum/views/users.py:341
 msgid "graph of user karma"
-msgstr "gráfico del karma del usuario"
+msgstr "gráfico del Karma del usuario"
 
 #: forum/views/users.py:356
 msgid "user vote record"
@@ -6214,7 +6323,7 @@ msgstr "Preferencias nuevas guardadas"
 
 #: forum/views/writers.py:59
 msgid "uploading images is limited to users with >60 reputation points"
-msgstr "la subida de imágenes está limitada a usuario con más de 60 puntos de karma"
+msgstr "la subida de imágenes está limitada a usuario con más de 60 puntos de Karma"
 
 #: forum/views/writers.py:61
 msgid "allowed file types are 'jpg', 'jpeg', 'gif', 'bmp', 'png', 'tiff'"
@@ -7088,6 +7197,22 @@ msgstr "La autenticación con Facebook ha fallado debido a una firma incorrecta"
 msgid "The authentication with Facebook connect failed, cannot find authentication tokens"
 msgstr "La autenticación con Facebook ha fallado, no se encuentran los tokens de autenticación"
 
+#: forum_modules/facebookauth/settings.py:7
+msgid "Facebook API key"
+msgstr "Clave API Facebook"
+
+#: forum_modules/facebookauth/settings.py:8
+msgid "Get this key at the <a href='http://www.facebook.com/developers/'>Facebook developers network</a> to enable authentication in your site through facebook."
+msgstr "Obtén esta clave en <a href='http://www.facebook.com/developers/'>Desarrolladores de Facebook</a> para habilitar la autentificación en tu sitio a través de Facebook."
+
+#: forum_modules/facebookauth/settings.py:15
+msgid "Facebook APP secret"
+msgstr "Clave secreta APP Facebook"
+
+#: forum_modules/facebookauth/settings.py:16
+msgid "This your facebook app secret that you'll get in the same place as the API key."
+msgstr "Este es tu clave APP secreta de Facebook que obtendas en el mismo sitio que la clave API."
+
 #: forum_modules/localauth/forms.py:75
 msgid "Please enter valid username and password (both are case-sensitive)."
 msgstr "Por favor introduce un nombre de usuario y contraseña (los dos distinguen entre mayúsculas y minúsculas)"
@@ -7144,6 +7269,22 @@ msgstr "Error, el token oauth no está en el servidor"
 msgid "Something went wrong! Auth tokens do not match"
 msgstr "Algo ha ido mal! Los tokens de autenticación no coinciden"
 
+#: forum_modules/oauthauth/settings.py:7
+msgid "Twitter consumer key"
+msgstr "Clave cliente de Twitter"
+
+#: forum_modules/oauthauth/settings.py:8
+msgid "Get this key at the <a href='http://twitter.com/apps/'>Twitter apps</a> to enable authentication in your site through Twitter."
+msgstr "Obtén esta clave en <a href='http://twitter.com/apps/'>Twitter apps</a> para habilitar la autentificación en tu sitio a través de Twitter."
+
+#: forum_modules/oauthauth/settings.py:12
+msgid "Twitter consumer secret"
+msgstr "Clave secreta de cliente de Twitter"
+
+#: forum_modules/oauthauth/settings.py:13
+msgid "This your Twitter consumer secret that you'll get in the same place as the consumer key."
+msgstr "Esta es tu clave secreta de cliente de Twitter que obtendrás en el mismo sitio que la clave de cliente."
+
 #: forum_modules/project_badges/badges.py:9
 msgid "Bug Buster"
 msgstr "Cazador de Errores"
@@ -7156,6 +7297,22 @@ msgstr "Recibir %s votos positivos en una pregunta etiquetada como \"bug\""
 #: forum_modules/recaptcha/formfield.py:20
 msgid "Invalid captcha"
 msgstr "Captcha inválido"
+
+#: forum_modules/recaptcha/settings.py:7
+msgid "Recaptcha public key"
+msgstr "Clave pública de Recaptcha"
+
+#: forum_modules/recaptcha/settings.py:8
+msgid "Get this key at <a href='ttp://recaptcha.net'>reCaptcha</a> to enable recaptcha anti spam through."
+msgstr "Obtén esta clave en <a href='ttp://recaptcha.net'>reCaptcha</a> para habilitar la herramienta anti spam reCaptcha"
+
+#: forum_modules/recaptcha/settings.py:7
+msgid "Recaptcha private key"
+msgstr "Clave privada de Recaptcha"
+
+#: forum_modules/recaptcha/settings.py:7
+msgid "This is the private key you'll get in the same place as the recaptcha public key."
+msgstr "Este es la clave privada que obtendrás en el mismo sitio que la clave pública de reCaptcha"
 
 #: forum_modules/sximporter/importer.py:137
 #, python-format
@@ -7191,6 +7348,14 @@ msgstr "Tu identificador de usuario en Stack Exchange"
 #: forum_modules/sximporter/templates/page.html:20
 msgid "Merge users with same user name and email"
 msgstr "Unificar usuarios con el mismo nombre y dirección de correo"
+
+#: forum/templatetags/extra_tags.py:103
+msgid "%b %d at %H:%M"
+msgstr "%d %b a las %H:%M"
+
+#: forum/templatetags/extra_tags.py:105
+msgid "%b %d '%y at %H:%M"
+msgstr "%d %b '%y a las %H:%M"
 
 #: locale/phrases.py:1
 msgid "Test Phrase 1"
