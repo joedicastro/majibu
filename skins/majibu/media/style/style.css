@@ -56,7 +56,7 @@ blockquote {background-color: #F5F5F5; margin-bottom: 10px; margin-right: 15px; 
 #listA .short-summary:first-of-type { border-top: 0;}
 .user-stats-table .short-summary { width: 790px;}
 .short-summary h2 a { color: #2A5594; font-family: "Trebuchet MS", "segoe ui", arial, sans-serif; font-size: 17px;}
-.short-summary .userinfo { color: #666666; float: right; margin-top: 8px;}
+.short-summary .userinfo { color: #666666; float: right; margin-top: 12px;}
 .userinfo a, a.userinfo { color: #3060A8;}
 .short-summary .counts { float: left; margin-right: 0px; margin-top: 4px; padding-right: 2px;}
 .short-summary .counts .item-count { font-size: 18px; font-weight: bold;}
@@ -65,11 +65,13 @@ blockquote {background-color: #F5F5F5; margin-bottom: 10px; margin-right: 15px; 
 .short-summary .votes, .short-summary .views { color: #666666;}
 .short-summary .favorites { width: 24px; float: left; text-align: center;}
 #question-table { margin-bottom: 10px;}
-.questions-count { color: #A40000; font-family: sans-serif; font-size: 24px; font-weight: bold; margin-top: 3px; margin-right: 5px; padding: 0 0 5px 0; line-height: 100%;}
+.questions-count { color: #A40000; font-family: sans-serif; font-size: 24px; font-weight: bold; padding-top: 5px; margin-right: 5px; padding: 0 0 5px 0; line-height: 100%; clear: both;}
+.questions-count .tag {margin-right: 150px;}
 .boxA { background: none repeat scroll 0 0 #356FCB; -moz-border-radius:5px; -webkit-border-radius:5px; margin-bottom: 12px; padding: 5px;}
 .boxA h3 { color: #FFFFFF; font-size: 13px; font-weight: 800; margin: 0 0 4px; padding: 0; text-align: center;}
 .boxA .body { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #999999; font-size: 13px; padding: 8px;}
 .boxA .more { font-weight: 800; padding: 2px; text-align: right;}
+.boxC .more {clear: both;}
 .boxC { background: none repeat scroll 0 0 #E5EBF8; -moz-border-radius:5px; -webkit-border-radius:5px; margin-bottom: 12px; padding: 10px; width: 210px;}
 .boxC p { margin-bottom: 8px;}
 .boxC p.nomargin { margin: 0;}
@@ -85,8 +87,8 @@ blockquote {background-color: #F5F5F5; margin-bottom: 10px; margin-right: 15px; 
 .paginator .page:hover, .paginator .prev a:hover, .paginator .next a:hover { background-color: #777777; border: 1px solid #777777; color: #FFFFFF; text-decoration: none;}
 .paginator .text { color: #777777; font: bold 100% sans-serif; padding: 0.3em;}
 .paginator-container-left { padding: 5px 0 10px;}
-.tags { display: block; font-family: sans-serif; line-height: 250%; margin-top: 5px;}
-.tags a, span.tag { background-color: #ffffff; -moz-border-radius: 5px; -webkit-border-radius: 5px; border: 2px solid #356FCB; color: #356FCB; font-size: 12px; font-weight: normal; padding: 2px 7px; text-decoration: none; white-space: nowrap;}
+.tags { display: block; font-family: sans-serif; line-height: 250%; margin-top: 5px; float: left;}
+.tags a, span.tag { background-color: #ffffff; -moz-border-radius: 5px; -webkit-border-radius: 5px; border: 2px solid #356FCB; color: #356FCB; font-size: 12px; font-weight: normal; padding: 1px 6px; text-decoration: none; white-space: nowrap; float: left; margin: 2px; line-height: 18px;}
 .tags a:hover { background-color: #356FCB; color: #FFFFFF;}
 .tag-number { font-family: sans-serif; font-weight: 700;}
 .marked-tags { margin-bottom: 5px; margin-top: 0;}
@@ -96,6 +98,7 @@ a.medal:hover { background: url("../images/medala_on.gif") no-repeat scroll 0 0 
 .tabsA { background-color: #FFFFFF; display: block; float: right; font-weight: bold; height: 30px; position: relative;}
 .tabsA a, .sticky-sort-tabs { background: none repeat scroll 0 0 #EEEEEE; color: #888A85; display: block; float: left; height: 20px; line-height: 22px; margin: 5px 4px 0 0; text-decoration: none; border: 1px solid  #888A85;}
 .tabsA a { padding: 0 11px;}
+.boxC .tags {float: none;}
 .sticky-sort-tabs { width: 20px; padding: 0;}
 .sticky-sort-tabs input { border: 0; height: 14px; width: 14px; margin: 2px;}
 .tabsA a.on, .tabsA a:hover { background: none repeat scroll 0 0 #ffffff; color: #A40000;}
@@ -155,7 +158,8 @@ span.form-error { color: #990000; font-size: 90%; font-weight: normal; margin-le
 .revision .body { margin-bottom: 50px; padding-left: 10px;}
 del { color: #FF5F5F;}
 ins { background-color: #97FF97;}
-.count { color: #777777; font-family: Arial; font-size: 200%; font-weight: 700;}
+.count { color: #777777; font-family: Arial; font-size: 200%; font-weight: 700; float: left; clear: both; padding-right: 5px;}
+table.tags {width: 100%;}
 .scoreNumber { color: #777777; font-family: Arial; font-size: 35px; font-weight: 800; line-height: 40px;}
 .user-details { font-size: 13px;}
 .user-about { background-color: #EEEEEE; height: 200px; line-height: 20px; overflow: auto; padding: 10px; width: 90%;}
@@ -316,5 +320,4 @@ div.subscription_tags a:hover { background-color: #356FCB; color: #FFFFFF;}
 div.wmd-button { color:white;}
 div.wmd-button-bar { float:left;}
 div#recaptcha_area { margin-left: 0;}
-#recent-tags { line-height: 230%;}
 
