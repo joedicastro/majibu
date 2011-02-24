@@ -21,7 +21,7 @@
                     $('#type-filter-container').find('input[value=' + link_type + ']').remove();
                 }
 
-                $form.submit();                
+                $form.submit();
             });
 
             $('#all-state-link').click(function() {
@@ -171,7 +171,7 @@
                 $('#state-filter-type-hidden').val($(this).val());
                 $form.submit();
             });
-            
+
             $('#reset-text-filter').click(function() {
                 $('#text-filter-input').val('');
                 $form.submit();
@@ -252,7 +252,7 @@
           return value;
         }
     }
-    
+
     </script>
     <script type="text/javascript" src="{{ settings.ADMIN_MEDIA_PREFIX }}js/core.js"></script>
 {% endblock %}
@@ -270,7 +270,7 @@
             <form method="get" action="" id="changelist-search">
             <div>
                 <div>
-                    <label><img alt="Search" src="{{ settings.ADMIN_MEDIA_PREFIX }}img/admin/icon_searchbox.png"></label>
+                    <label><img alt="Buscar" src="{{ settings.ADMIN_MEDIA_PREFIX }}img/admin/icon_searchbox.png"></label>
                     <input type="text" size="40" name="text" id="text-filter-input" value="{{ text }}">
                     <input type="submit" value="{% trans "Search" %}">
                     {% if text %}
@@ -438,7 +438,7 @@
                         {% spaceless %}
                         <th class="action-checkbox-column">
                             <input type="checkbox" id="action-toggle" style="display: inline;" />
-                        </th>                        
+                        </th>
                         <th>{% trans "Type" %}</th>
                         <th>{% trans "Summary" %}</th>
                         <th class="col-resizer"></th>
@@ -511,3 +511,4 @@
         </form>
     </div>
 {% endblock %}
+

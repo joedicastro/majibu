@@ -4166,6 +4166,14 @@ msgstr ""
 "            %(new_member_links)s se han unido a %(app_name)s.\n"
 "        "
 
+#: forum/skins/default/templates/notifications/digest.html:40
+msgid "latest"
+msgstr "últimas"
+
+#: forum/skins/default/templates/notifications/digest.html:40
+msgid "new questions"
+msgstr "nuevas preguntas"
+
 #: forum/skins/default/templates/notifications/digest.html:46
 #, python-format
 msgid ""
@@ -4182,9 +4190,8 @@ msgid "We think you might like the following questions:"
 msgstr "Creemos que pueden interesarte estas preguntas:"
 
 #: forum/skins/default/templates/notifications/digest.html:66
-#, fuzzy
 msgid "These new questions didn't get many attention from the community, but we think you may be able to help:"
-msgstr "Estas preguntas no han recibido mucha atención de la comunidad, pero creemos que podrías echar una mano:"
+msgstr "Estas preguntas no han recibido mucha atención de la comunidad, pero creemos que podrías echar una mano: "
 
 #: forum/skins/default/templates/notifications/digest.html:78
 #, python-format
@@ -6298,6 +6305,7 @@ msgid "subscription"
 msgstr "suscripción"
 
 #: forum/views/users.py:369
+#: forum/skins/default/templates/notifications/digest.html:42
 msgid "subscriptions"
 msgstr "notificaciones por email"
 
