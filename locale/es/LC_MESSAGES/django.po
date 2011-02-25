@@ -5059,7 +5059,7 @@ msgstr "lista numerada:"
 
 #: forum/skins/default/templates/sidebar/markdown_help.html:26
 msgid "to add a line break simply add two spaces to where you would like the new line to be."
-msgstr "Para añadir un salto de línea simplemente añade dos espacios donde desearías que estuviera el salto de línea."
+msgstr "Para añadir un salto de línea simplemente deja una línea en blanco entre parrafos"
 
 #: forum/skins/default/templates/sidebar/markdown_help.html:29
 msgid "basic HTML tags are also supported"
