@@ -6134,7 +6134,7 @@ msgstr "últimas preguntas"
 
 #: forum/views/readers.py:90
 msgid "unanswered"
-msgstr "sin responder"
+msgstr "por aceptar"
 
 #: forum/views/readers.py:94
 msgid "open questions without an accepted answer"
