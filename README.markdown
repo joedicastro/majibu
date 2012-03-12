@@ -1,5 +1,3 @@
-<!-- -*- markdown -*- -->
-
 # majibu
 
 
@@ -18,3 +16,10 @@ http://python.majibu.org
 * **locale**:
 
  The site's spanish language translation. 
+
+
+### Files in ./
+
+* **cstyle.css**
+
+ Custom Stye Sheet.

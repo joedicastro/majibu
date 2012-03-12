@@ -1,5 +1,3 @@
-<!-- -*- markdown -*- -->
-
 # majibu
 
 Tema y localización de OSQA para el proyecto Python Majibu.
@@ -9,7 +7,7 @@ sobre Programación en Python.
 http://python.majibu.org
 
 
-### Folders in ./
+### Carpetas en ./
 
 * **Skins**:
  
@@ -18,3 +16,12 @@ http://python.majibu.org
 * **locale**:
 
   La traducción al castellano del sitio.
+
+
+### Archivos en ./
+
+* **cstyle.css**:
+
+ Hoja de estilos personalizada.
+
+	
